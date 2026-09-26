@@ -1245,3 +1245,78 @@
     height: 160px;
   }
 }
+@media (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  #root {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .home {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .clown-grid {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .clown-card {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .clown-card img {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .search-container,
+  .search-input {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .order-overlay {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .order-popup {
+    width: calc(100% - 30px);
+    max-width: 430px;
+    box-sizing: border-box;
+  }
+
+  .secret-file,
+  .error-404,
+  .blood-easter-egg,
+  .who-easter-egg,
+  .unknown-case,
+  .zero-easter-egg,
+  .three-three-three,
+  .title-secret,
+  .user-easter-egg {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}

@@ -1,6 +1,7 @@
 import Home from "../Pages/Home";
 import Header from "./Header";
 import NavBar from "./Navbar";
+import "./Page.css"
 
 function Page() {
   return (
