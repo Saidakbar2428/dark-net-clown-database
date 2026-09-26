@@ -10,10 +10,20 @@ export default async function handler(req, res) {
   }
 
   const message =
-    `🚨 YANGI MASXARABOZ BUYURTMASI 🚨\n\n` +
-    `🤡 Masxaraboz: ${clownName}\n` +
-    `📞 Telefon: ${phoneNumber}\n` +
-    `📁 Ish raqami: ${caseNumber || "NOMA'LUM"}`;
+    `☠️━━━━━━━━━━━━━━━━━━━━☠️\n` +
+    `        ⚠️ MAXFIY ISH ⚠️\n` +
+    `☠️━━━━━━━━━━━━━━━━━━━━☠️\n\n` +
+    `🚨 OGOHLANTIRISH: YANGI BUYURTMA ANIQLANDI\n\n` +
+    `🤡 NISHON: ${clownName}\n` +
+    `📞 ALOQA: ${phoneNumber}\n` +
+    `📁 ISH RAQAMI: ${caseNumber || "NOMA'LUM"}\n\n` +
+    `⚠️ DIQQAT:\n` +
+    `Ushbu masxaraboz allaqachon so'ralgan.\n` +
+    `Buyurtma qabul qilindi.\n\n` +
+    `🔴 STATUS: KUZATUVDA\n` +
+    `☠️ XAVF DARAJASI: ANIQLANMAGAN\n\n` +
+    `...va endi u sizni kutmoqda.\n\n` +
+    `☠️━━━━━━━━━━━━━━━━━━━━☠️`;
 
   const response = await fetch(
     `https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/sendMessage`,
