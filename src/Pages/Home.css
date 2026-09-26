@@ -1,3 +1,5 @@
+/* Home */
+
 .home {
   min-height: 100vh;
   margin-left: 190px;
@@ -958,4 +960,288 @@
   border-bottom: 1px solid #900000;
   background: #111;
   filter: contrast(1.1) brightness(0.75);
+}
+
+@media (max-width: 768px) {
+
+  .home {
+    margin-left: 0;
+    padding: 25px 15px 90px;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .home-title {
+    font-size: 22px;
+    letter-spacing: 3px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .search-container {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 14px 13px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+  }
+
+  .clown-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    width: 100%;
+  }
+
+  .clown-card {
+    width: 100%;
+    min-height: auto;
+    max-height: none;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .clown-card:hover {
+    transform: none;
+  }
+
+  .clown-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .clown-name {
+    font-size: 19px;
+    letter-spacing: 2px;
+    margin-top: 12px;
+  }
+
+  .clown-description {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+  }
+
+  .clown-info {
+    gap: 7px;
+    padding-top: 12px;
+  }
+
+  .clown-info p {
+    font-size: 12px;
+  }
+
+  .order-btn {
+    margin-top: 20px;
+    padding: 14px 10px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    min-height: 46px;
+  }
+
+  .threat-level {
+    padding: 3px 7px;
+    font-size: 11px;
+  }
+
+  /* ORDER POPUP */
+
+  .order-overlay {
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .order-popup {
+    width: 100%;
+    max-width: 430px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+  }
+
+  .order-popup h2 {
+    font-size: 19px;
+    letter-spacing: 2px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  .order-popup h3 {
+    font-size: 21px;
+    margin: 10px 0 22px;
+  }
+
+  .order-text {
+    font-size: 12px;
+  }
+
+  .order-popup input {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+
+  .order-popup form button,
+  .success-btn {
+    padding: 15px;
+    min-height: 48px;
+    font-size: 12px;
+  }
+
+  .order-close {
+    top: 8px;
+    right: 12px;
+    font-size: 30px;
+  }
+
+  /* EASTER EGGS */
+
+  .secret-file,
+  .error-404,
+  .blood-easter-egg,
+  .who-easter-egg,
+  .unknown-case,
+  .zero-easter-egg,
+  .three-three-three,
+  .title-secret,
+  .user-easter-egg {
+    width: 100%;
+    padding: 22px 16px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+  }
+
+  .secret-file {
+    min-height: auto;
+  }
+
+  .secret-file h2 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+  }
+
+  .secret-warning {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .secret-line {
+    font-size: 11px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+  }
+
+  .secret-description {
+    margin-top: 25px;
+    padding: 15px;
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  .error-glitch {
+    font-size: 19px;
+  }
+
+  .blood-warning {
+    font-size: 17px;
+  }
+
+  .who-title {
+    font-size: 13px;
+  }
+
+  .unknown-case h2 {
+    font-size: 20px;
+  }
+
+  .unknown-line {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .unknown-warning {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+  .zero-title {
+    font-size: 13px;
+  }
+
+  .three-title {
+    font-size: 13px;
+  }
+
+  .three-three-three p {
+    font-size: 12px;
+  }
+
+  .title-secret-main {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+  }
+
+  .title-secret p {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .error-title {
+    font-size: 21px;
+    letter-spacing: 3px;
+  }
+
+  .error-code {
+    font-size: 11px;
+    overflow-wrap: break-word;
+  }
+
+  .user-title {
+    font-size: 11px;
+    letter-spacing: 2px;
+    line-height: 1.6;
+  }
+
+  .user-line {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .user-warning {
+    font-size: 11px;
+    line-height: 1.6;
+  }
+}
+
+
+/* VERY SMALL PHONES */
+
+@media (max-width: 400px) {
+
+  .home {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .home-title {
+    font-size: 19px;
+  }
+
+  .clown-card {
+    padding: 12px;
+  }
+
+  .clown-card img {
+    height: 160px;
+  }
 }
