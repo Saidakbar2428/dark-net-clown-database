@@ -16,7 +16,7 @@ const [titleSecret, setTitleSecret] = useState(null);
 const [missingClown, setMissingClown] = useState(false);
 
   useEffect(() => {
-    fetch("/api/clowns")
+    fetch("/API/clowns")
       .then((response) => response.json())
       .then((data) => setClowns(data))
       .catch((error) => console.error(error));
