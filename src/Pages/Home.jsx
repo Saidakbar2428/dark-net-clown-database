@@ -54,12 +54,36 @@ const [missingClown, setMissingClown] = useState(false);
     setOrderedClown(null);
   };
 
-  const submitOrder = (e) => {
-    e.preventDefault();
+  const submitOrder = async (e) => {
+  e.preventDefault();
+
+  try {
+    const response = await fetch("/api/order", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        clownName: selectedClown.name,
+        phoneNumber: phoneNumber,
+        caseNumber: selectedClown.caseNumber,
+      }),
+    });
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(data.error || "Buyurtmada xato");
+    }
 
     setOrderedClown(selectedClown);
     setSelectedClown(null);
-  };
+    setPhoneNumber("");
+  } catch (error) {
+    console.error("Buyurtma xatosi:", error);
+    alert("Buyurtmani yuborishda xatolik yuz berdi.");
+  }
+};
 
   const closePopup = () => {
     setSelectedClown(null);
