@@ -1320,3 +1320,123 @@
     box-sizing: border-box;
   }
 }
+
+@media (max-width: 768px) {
+
+  /* ===== EASTER EGGS — MOBILE ===== */
+
+  .secret-loading,
+  .secret-file,
+  .error-404,
+  .blood-easter-egg,
+  .who-easter-egg,
+  .unknown-case,
+  .zero-easter-egg,
+  .three-three-three,
+  .title-secret,
+  .user-easter-egg {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  /* Secret file */
+  .secret-file h2,
+  .secret-warning,
+  .secret-line,
+  .secret-description {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  /* 404 */
+  .error-glitch,
+  .error-small,
+  .error-red {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  /* BLOOD */
+  .blood-warning,
+  .blood-reason,
+  .blood-final {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  /* WHO */
+  .who-title,
+  .who-warning,
+  .who-final {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  /* UNKNOWN CASE */
+  .unknown-header,
+  .unknown-case h2,
+  .unknown-line,
+  .unknown-warning {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  /* 000 */
+  .zero-title,
+  .zero-small,
+  .zero-final {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  /* 03:33 */
+  .three-title,
+  .three-three-three p,
+  .three-warning,
+  .three-final {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  /* TITLE CLICK SECRETS */
+  .title-secret-main,
+  .title-secret p,
+  .error-title,
+  .error-code,
+  .error-final {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  /* SAIDAKBAR */
+  .user-title,
+  .user-line,
+  .user-warning {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+}
+
+@media (max-width: 768px) {
+  .home * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
